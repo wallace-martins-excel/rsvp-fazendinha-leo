@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de Presença - Fazendinha do Léo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fontes inspiradas no convite: Fredoka One (títulos) e Nunito (textos) -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header class="header">
+            <div class="sunflower left">🌻</div>
+            <h1>Fazendinha do Léo</h1>
+            <div class="sunflower right">🌻</div>
+        </header>
+
+        <!-- Container do Formulário -->
+        <main class="card" id="form-card">
+            <h2>Confirmação de Presença</h2>
+            <p class="subtitle">Estamos muito felizes em celebrar os <strong>2 anos do Léo</strong> com você!</p>
+            <p class="instruction">Confirme sua presença preenchendo os dados abaixo:</p>
+
+            <form id="rsvp-form">
+                <div class="input-group">
+                    <label for="nome">Nome Completo *</label>
+                    <input type="text" id="nome" name="nome" placeholder="Ex: João da Silva" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="acompanhantes">Quantidade de acompanhantes</label>
+                    <input type="number" id="acompanhantes" name="acompanhantes" min="0" max="10" placeholder="0" value="0">
+                </div>
+
+                <div class="input-group">
+                    <label for="observacoes">Observações (Restrições alimentares, etc.)</label>
+                    <textarea id="observacoes" name="observacoes" rows="3" placeholder="Opcional"></textarea>
+                </div>
+
+                <button type="submit" id="submit-btn">
+                    <span class="btn-text">Confirmar Presença</span>
+                    <span class="loader" id="loader"></span>
+                </button>
+            </form>
+        </main>
+
+        <!-- Mensagem de Sucesso (Oculta por padrão) -->
+        <main class="card success-card hidden" id="success-card">
+            <div class="success-icon">🎉</div>
+            <h2>Presença Confirmada!</h2>
+            <p>Obrigado por confirmar sua participação.</p>
+            <p>Estamos ansiosos para celebrar esse momento especial com você na nossa fazendinha!</p>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
