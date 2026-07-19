@@ -1,5 +1,5 @@
 // ATENÇÃO: Substitua a URL abaixo pela URL gerada no Google Apps Script no Passo 3
-const SCRIPT_URL = https://script.google.com/macros/s/AKfycbwv27V3rl6DxpKGWcsDMR0kRcxhN5Hyw6Dq3Lv9mlHo9jy6e1H43P3GsviW9VntIV_wgw/exec;
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwv27V3rl6DxpKGWcsDMR0kRcxhN5Hyw6Dq3Lv9mlHo9jy6e1H43P3GsviW9VntIV_wgw/exec";
 
 const form = document.getElementById('rsvp-form');
 const btnSubmit = document.getElementById('submit-btn');
